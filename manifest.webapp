@@ -1,0 +1,15 @@
+{
+    "version": "0.1",
+    "name": "Calculator",
+    "description": "a simple calculator for firefox OS",
+    "developer": {
+        "name": "iceman126",
+        "url": "https://github.com/iceman126/fxoscal/"
+    },
+    "launch_path": "/index.html",
+    "default_locale": "en",
+    "icons":{
+        "128": "/style/icons/icon128.png"
+    },
+    "installs_allowed_from": ["*"]
+}

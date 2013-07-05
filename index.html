@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+Exchange the line above for this to enable offline support
+<html lang="en" manifest="manifest.appcache">
+-->
+    <head>
+        <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
+        <meta charset="UTF-8">
+        <title>
+            Calculator
+        </title>
+        <meta name="description" content="a simple calculator for firefox OS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="style/icons/favicon.ico" type="image/x-icon"><!--[if IE]><link rel="shortcut icon" href="style/icons/favicon.ico"  type="image/x-icon"><![endif]-->
+        <link rel="style/icons/apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"><!--<link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.2.min.js"><\/script>')
+    </script>-->
+        <link rel="stylesheet" type="text/css" href="style/main.css">
+        <link rel="stylesheet" type="text/css" href="style/headers.css">
+        <link rel="stylesheet" type="text/css" href="style/input_areas.css">
+        <link rel="stylesheet" type="text/css" href="style/buttons.css">
+        <link rel="stylesheet" type="text/css" href="style/custom.css">
+    </head>
+    <body role="application">
+        <!-- header -->
+        <section role="region">
+            <header>
+                <h1>
+                    Calculator(Beta)
+                </h1><!-- Custom actions here -->
+                <script defer src="js/main.js"></script>
+            </header>
+            <header>
+                by iceman126
+            </header>
+        </section>
+        <!-- Add your site or application content here -->
+        <section role="region">
+            <form id="cal_form" name="cal_form">
+                <fieldset>
+                    <p>
+                        <input type="number" id="first" required="">
+                        +
+                        <input type="number" id="second" required="">
+                        <br>
+                        <button id="calc">calc</button>
+                        =
+                        <span id="calc_reuslt">0</span>
+                        <button id="reset">reset</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        <!-- App Install detection -->
+         <!--<script src="js/app_installer.js"></script>-->
+         <!-- Debugger - remove for production -->
+         <!--<script src="https://getfirebug.com/firebug-lite.js"></script>-->
+         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+         <!--<script>
+        var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+        s.parentNode.insertBefore(g,s)}(document,"script"));
+    </script>-->
+    </body>
+</html>
