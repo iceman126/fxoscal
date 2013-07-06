@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="manifest.appcache">
     <!--
 Exchange the line above for this to enable offline support
 <html lang="en" manifest="manifest.appcache">
 -->
     <head>
-        <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
         <meta charset="UTF-8">
         <title>
             Calculator
@@ -23,6 +22,7 @@ Exchange the line above for this to enable offline support
         <link rel="stylesheet" type="text/css" href="style/input_areas.css">
         <link rel="stylesheet" type="text/css" href="style/buttons.css">
         <link rel="stylesheet" type="text/css" href="style/custom.css">
+        <!-- <script defer src="js/main.js"></script> -->
     </head>
     <body role="application">
         <!-- header -->
@@ -31,10 +31,12 @@ Exchange the line above for this to enable offline support
                 <h1>
                     Calculator(Beta)
                 </h1><!-- Custom actions here -->
-                <script defer src="js/main.js"></script>
+                
             </header>
             <header>
-                by iceman126
+                <h2>
+                    by iceman126
+                <h2>
             </header>
         </section>
         <!-- Add your site or application content here -->
@@ -43,17 +45,23 @@ Exchange the line above for this to enable offline support
                 <fieldset>
                     <p>
                         <input type="number" id="first" required="">
+                    </p>
                         +
                         <input type="number" id="second" required="">
                         <br>
-                        <button id="calc">calc</button>
+                        <button type="button" id="plus">+</button>
+                        <button type="button" id="minus">-</button>
+                        <button type="button" id="multi">*</button>
+                        <button type="button" id="divide">/</button>
                         =
-                        <span id="calc_reuslt">0</span>
-                        <button id="reset">reset</button>
+                    <p>
+                        <span id="calc_result"></span>
                     </p>
+                        <button id="reset">reset</button>
                 </fieldset>
             </form>
         </section>
+        <script src="js/cal.js"></script>
         <!-- App Install detection -->
          <!--<script src="js/app_installer.js"></script>-->
          <!-- Debugger - remove for production -->
